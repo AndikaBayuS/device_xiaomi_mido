@@ -17,9 +17,12 @@
 $(call inherit-product, device/xiaomi/mido/full_mido.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+$(call inherit-product, vendor/carbon/config/common.mk)
 
-PRODUCT_NAME := du_mido
+# Inherit Carbon GSM telephony parts
+$(call inherit-product, vendor/carbon/config/gsm.mk)
+
+PRODUCT_NAME := carbon_mido
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
