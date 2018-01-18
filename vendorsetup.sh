@@ -1,1 +1,1 @@
-add_lunch_combo carbon_mido-userdebug
+add_lunch_combo du_mido-userdebug
