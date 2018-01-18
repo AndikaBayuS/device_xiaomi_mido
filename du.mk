@@ -14,15 +14,16 @@
 # limitations under the License.
 #
 
+# Inherit some mido stuff
 $(call inherit-product, device/xiaomi/mido/full_mido.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/carbon/config/common.mk)
+$(call inherit-product, vendor/du/config/common.mk)
 
 # Inherit Carbon GSM telephony parts
-$(call inherit-product, vendor/carbon/config/gsm.mk)
+$(call inherit-product, vendor/du/config/common_full_phone.m)
 
-PRODUCT_NAME := carbon_mido
+PRODUCT_NAME := du_mido
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
