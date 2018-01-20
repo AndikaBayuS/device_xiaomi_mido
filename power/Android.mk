@@ -82,5 +82,4 @@ endif
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_OWNER := qcom
 LOCAL_HEADER_LIBRARIES := libhardware_headers
-LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_EXECUTABLE)
