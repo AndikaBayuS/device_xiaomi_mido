@@ -103,7 +103,7 @@
             64 - Volume rocker
          For example, a device with Home, Back and Menu keys would set this
          config to 7. -->
-    <integer name="config_deviceHardwareKeys">7</integer>
+    <integer name="config_deviceHardwareKeys">19</integer>
 
     <!-- Control the behavior when the user long presses the home button.
             0 - Nothing
@@ -372,5 +372,19 @@
 
     <!-- Boolean indicating whether we want button brightness support -->
     <bool name="config_button_brightness_support">true</bool>
+
+    <!-- Does the battery LED support multiple colors? -->
+    <bool name="config_multiColorBatteryLed">true</bool>
+
+    <!-- Does the notification LED support multiple colors?
+         Used to decide if the user can change the colors -->
+    <bool name="config_multiColorNotificationLed">true</bool>
+
+   <!-- Is the battery LED intrusive? -->
+    <bool name="config_intrusiveBatteryLed">true</bool>
+
+    <!-- Do the battery/notification LEDs support pulsing?
+         Used to decide if we show pulse settings -->
+    <bool name="config_ledCanPulse">true</bool>
 
 </resources>
